@@ -1,0 +1,15 @@
+version: '3.4'
+services:
+  bd_medicionplantas:
+    container_name: bd_medicionplantas
+    build:
+      context: .
+      dockerfile: DockerfileMongo
+    ports:
+      - 27017:27017
+    volumes:
+      - $PWD/../BD_MEDICIONPLANTAS:/data/db
+    networks:
+      - medicionplantas-net
+networks:
+  medicionplantas-net:
