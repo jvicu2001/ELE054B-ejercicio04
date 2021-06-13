@@ -1,6 +1,24 @@
 
 Repositorio para **[La Fiesta de la Programación - Spring Boot y Mongo DB](https://youtu.be/BgAdXIjbNSY)**
 
+## Instalaciones para react
+
+Creacion de Proyecto
+
+```bash
+    npx create-react-app medicionplantasweb
+```
+
+Dependencias necesarias
+
+```bash
+    npm install react-router-dom
+    npm install bootstrap
+    npm install node-sass
+    npm install primereact --save
+    npm install primeicons --save
+```
+
 
 ## Queries básicas de mongoDB 
 ---
