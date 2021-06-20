@@ -1,15 +1,15 @@
 
 Repositorio para **[La Fiesta de la Programación - Spring Boot y Mongo DB](https://youtu.be/BgAdXIjbNSY)**
 
-## Instalaciones para react
+### Instalaciones para react
 
-Creacion de Proyecto
+## Creacion de Proyecto
 
 ```bash
     npx create-react-app medicionplantasweb
 ```
 
-Dependencias necesarias
+## Dependencias necesarias
 
 ```bash
     npm install react-router-dom
@@ -17,6 +17,10 @@ Dependencias necesarias
     npm install node-sass
     npm install primereact --save
     npm install primeicons --save
+    npm install redux
+    npm install redux-thunk
+    npm install axios
+    npm install sweetalert2
 ```
 
 

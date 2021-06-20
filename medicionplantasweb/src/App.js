@@ -1,5 +1,7 @@
 import './App.scss';
+import {Provider} from 'react-redux';
 import { BaseRouter } from './routers/BaseRouter';
+import { store } from './store/store';
 //Esto es lo que hace react
 //const div = document.createElement("div");
 // div.classList.add("App")
@@ -9,9 +11,9 @@ import { BaseRouter } from './routers/BaseRouter';
 
 function App() {
   return (
-    <>
+    <Provider store={store}>
       <BaseRouter></BaseRouter>
-    </>
+    </Provider>
     
   );
 }
