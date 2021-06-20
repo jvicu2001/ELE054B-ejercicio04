@@ -19,20 +19,18 @@ export const AgregarMedidasContainer = ()=>{
         let validoFecha = false;
         debugger;
         if(valor<0 || valor >100){
-            setErrores({...errores,valor:"El valor es incorrecto"});
             validoValor = false;
         }else {
-            setErrores({...errores,valor:''});
             validoValor = true;
         }
 
-        if(!fecha){
-            setErrores({...errores,fecha:"Debe ingresar una fecha"});
+        if(!fecha){   
             validoFecha = false;
         } else {
-            setErrores({...errores,fecha:''});
             validoFecha = true;
         }
+        setErrores({...errores, valor: !validoValor? "Debe ingresar valor": ''
+        , fecha: !validoFecha? "Debe ingresar fecha": ''  });
         return validoFecha && validoValor;
 
     };
