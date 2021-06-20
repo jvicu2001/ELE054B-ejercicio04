@@ -47,7 +47,6 @@ export const AgregarMedidasContainer = ()=>{
             }
         }
     };
-    console.log(errores);
     return (
         <div className="row mt-5">
             <div className="col-12 col-md-6 col-lg-5 mx-auto">
