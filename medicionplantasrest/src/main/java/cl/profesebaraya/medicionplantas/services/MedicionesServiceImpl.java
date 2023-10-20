@@ -11,8 +11,12 @@ import cl.profesebaraya.medicionplantas.repositories.MedicionesRepository;
 @Service
 public class MedicionesServiceImpl implements MedicionesService {
 
-	@Autowired
 	private MedicionesRepository medRepo;
+
+	@Autowired
+	public MedicionesServiceImpl(MedicionesRepository medRepo) {
+		this.medRepo = medRepo;
+	}
 	@Override
 	public Medicion save(Medicion m) {
 		// TODO Auto-generated method stub
